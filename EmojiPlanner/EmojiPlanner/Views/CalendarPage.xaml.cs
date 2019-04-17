@@ -39,13 +39,10 @@ namespace EmojiPlanner.Views
 
                 ColumnDefinitions =
             {
-                new ColumnDefinition { Width = new GridLength(10, GridUnitType.Auto) },
-                new ColumnDefinition { Width = new GridLength(10, GridUnitType.Auto) },
-                new ColumnDefinition { Width = new GridLength(10, GridUnitType.Auto) },
-                new ColumnDefinition { Width = new GridLength(10, GridUnitType.Auto) },
-                new ColumnDefinition { Width = new GridLength(10, GridUnitType.Auto) },
-                new ColumnDefinition { Width = new GridLength(10, GridUnitType.Auto) },
-                new ColumnDefinition { Width = new GridLength(10, GridUnitType.Auto) },
+                new ColumnDefinition { Width = new GridLength(10, GridUnitType.Star) },
+                new ColumnDefinition { Width = new GridLength(10, GridUnitType.Star) },
+                new ColumnDefinition { Width = new GridLength(10, GridUnitType.Star) },
+               
 
                 },
 
@@ -111,7 +108,7 @@ namespace EmojiPlanner.Views
 
             var leftButton = new Button
             {
-                Text = MonthName(monthCheck.Month - 1),
+                Text = MonthName(monthCheck.Month - 1)+"<<<",
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 BackgroundColor= Color.Aqua,
@@ -121,11 +118,11 @@ namespace EmojiPlanner.Views
 
             var rightButton = new Button
             {
-                Text = MonthName(monthCheck.Month +1),
+                Text = ">>>"+MonthName(monthCheck.Month +1),
                 // HorizontalOptions = LayoutOptions.FillAndExpand,
-                VerticalOptions = LayoutOptions.FillAndExpand,
+               // VerticalOptions = LayoutOptions.FillAndExpand,
                 TextColor = Color.Gray,
-                BackgroundColor = Color.Aqua,
+                BackgroundColor = Color.LightGreen,
                 
 
 
@@ -146,16 +143,16 @@ namespace EmojiPlanner.Views
 
             };
 
-            Grid.SetRowSpan(topLabel, 5);
+            //Grid.SetRowSpan(topLabel, 5);
 
-            Grid.SetRowSpan(leftButton, 1);
-            Grid.SetRowSpan(rightButton, 1);
+            //Grid.SetRowSpan(leftButton, 1);
+            //Grid.SetRowSpan(rightButton, 1);
 
             topGrid.Children.Add(leftButton, 0, 1);
-            topGrid.Children.Add(topLabel, 4, 1);
-            topGrid.Children.Add(rightButton, 7, 1);
-            
- 
+            topGrid.Children.Add(topLabel, 1, 1);
+            topGrid.Children.Add(rightButton, 2, 1);
+
+   
             //System.DateTime moment = new System.DateTime();
 
 
@@ -326,7 +323,7 @@ namespace EmojiPlanner.Views
 
                     if(y%2==0 && cnt <= 31)
                     { 
-                    var dayLabel = new Label { BackgroundColor = Color.LightYellow,
+                    var dayLabel = new Button { BackgroundColor = Color.LightYellow,
                             VerticalOptions = LayoutOptions.FillAndExpand,
                             Text = cnt.ToString()
                        };
@@ -335,7 +332,7 @@ namespace EmojiPlanner.Views
                     }
                     if(!(y%2==0)&& cnt<=31)
                     {
-                        var dayLabel = new Label { BackgroundColor = Color.White,
+                        var dayLabel = new Button { BackgroundColor = Color.White,
                             VerticalOptions = LayoutOptions.FillAndExpand,
                             Text = cnt.ToString()
                         };
@@ -344,7 +341,7 @@ namespace EmojiPlanner.Views
 
                     if (time.Day == cnt)
                     {
-                        var dayLabel = new Label
+                        var dayLabel = new Button
                         {
                             BackgroundColor = Color.LightBlue,
                             VerticalOptions = LayoutOptions.FillAndExpand,
@@ -379,7 +376,18 @@ namespace EmojiPlanner.Views
 
                 }
 
-
+                if (cnt > 30)
+                    break;
+                if (cnt > 27 && (monthCheck.Month == 2 && monthCheck.Year % 4 == 0 || (monthCheck.Month == 2 && monthCheck.Year % 100 == 0 && monthCheck.Year % 400 == 0)))
+                {
+                    break;
+                }
+                if (cnt > 28 && monthCheck.Month == 2)
+                    break;
+                if ((monthCheck.Month == 9 || monthCheck.Month == 4 || monthCheck.Month == 6 || monthCheck.Month == 11) && cnt > 29)
+                    break;
+                if (cnt > 30)
+                    break;
             }
 
             Content = new StackLayout
@@ -403,9 +411,10 @@ namespace EmojiPlanner.Views
 
         //private EventHandler rightButtonClick()
         //{
-            
-            
-        //    //throw new NotImplementedException();
+
+        //    Cu.CurrentPageChanged += tabChanged;
+
+        //    throw new NotImplementedException();
         //}
     }
 }

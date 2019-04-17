@@ -7,8 +7,8 @@
         <ToolbarItem Text="Save" Clicked="Save_Clicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout Spacing="20" Padding="15">
-            <DatePicker/>
+        <StackLayout  Spacing="20" Padding="15">
+            <DatePicker Date="{Binding Item.DateUsed}"/>
 
             <Label Text="Text" FontSize="Medium" />
             <Entry Text="{Binding Item.Text}" FontSize="Small" />

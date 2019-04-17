@@ -21,6 +21,7 @@ namespace EmojiPlanner.Views
             {
                 Text = "Item name",
                 Description = "This is an item description."
+                , DateUsed = DateTime.Now
             };
 
             BindingContext = this;

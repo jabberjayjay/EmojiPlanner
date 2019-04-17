@@ -28,6 +28,7 @@ namespace EmojiPlanner.Views
             {
                 Text = "Item 1",
                 Description = "This is an item description."
+               
             };
 
             viewModel = new ItemDetailViewModel(item);

@@ -8,6 +8,6 @@ namespace EmojiPlanner.Models
         public string Text { get; set; }
         public string Description { get; set; }
 
-        public DateTime dateUsed { get; set; }
+        public DateTime DateUsed { get; set; }
     }
 }
