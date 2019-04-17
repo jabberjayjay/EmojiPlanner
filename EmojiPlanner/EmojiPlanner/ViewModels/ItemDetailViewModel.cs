@@ -10,6 +10,7 @@ namespace EmojiPlanner.ViewModels
         public ItemDetailViewModel(Item item = null)
         {
             Title = item?.Text;
+            DateTime DateSelect = DateTime.Now;
             Item = item;
         }
     }

@@ -8,10 +8,13 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
+            <DatePicker/>
+
             <Label Text="Text" FontSize="Medium" />
             <Entry Text="{Binding Item.Text}" FontSize="Small" />
             <Label Text="Description" FontSize="Medium" />
             <Editor Text="{Binding Item.Description}" FontSize="Small" Margin="0" />
+            <Button Text="SAVE APPOINTMENT"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

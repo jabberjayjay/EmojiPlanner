@@ -4,7 +4,19 @@
             xmlns:views="clr-namespace:EmojiPlanner.Views"
             x:Class="EmojiPlanner.Views.MainPage">
     <TabbedPage.Children>
-        <NavigationPage Title="Browse">
+
+        <NavigationPage Title="Month">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_about.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:CalendarPage />
+            </x:Arguments>
+        </NavigationPage>
+
+        <NavigationPage Title="Appointments">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="tab_feed.png"/>
@@ -15,7 +27,8 @@
             </x:Arguments>
         </NavigationPage>
         
-        <NavigationPage Title="About">
+        
+        <NavigationPage Title="Today">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="tab_about.png"/>
@@ -25,5 +38,19 @@
                 <views:AboutPage />
             </x:Arguments>
         </NavigationPage>
+
+        <NavigationPage Title="Week">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_about.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:AboutPage />
+            </x:Arguments>
+        </NavigationPage>
+
+
+        
     </TabbedPage.Children>
 </TabbedPage>

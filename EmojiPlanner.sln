@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmojiPlanner.Android", "EmojiPlanner\EmojiPlanner.Android\EmojiPlanner.Android.csproj", "{CEB80879-55B9-4B01-9CEA-CE953CB4DBFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmojiPlanner.iOS", "EmojiPlanner\EmojiPlanner.iOS\EmojiPlanner.iOS.csproj", "{552C92FB-FBF1-4ABF-A201-645B1D497264}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmojiPlanner.UWP", "EmojiPlanner\EmojiPlanner.UWP\EmojiPlanner.UWP.csproj", "{8D2A86C2-AB70-4605-96BC-3EA3635E5B7C}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "EmojiPlanner", "EmojiPlanner\EmojiPlanner\EmojiPlanner.shproj", "{4315532F-2CCA-4A71-AAD6-2D10173AB812}"
@@ -14,7 +12,6 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		EmojiPlanner\EmojiPlanner\EmojiPlanner.projitems*{4315532f-2cca-4a71-aad6-2d10173ab812}*SharedItemsImports = 13
-		EmojiPlanner\EmojiPlanner\EmojiPlanner.projitems*{552c92fb-fbf1-4abf-a201-645b1d497264}*SharedItemsImports = 4
 		EmojiPlanner\EmojiPlanner\EmojiPlanner.projitems*{8d2a86c2-ab70-4605-96bc-3ea3635e5b7c}*SharedItemsImports = 4
 		EmojiPlanner\EmojiPlanner\EmojiPlanner.projitems*{ceb80879-55b9-4b01-9cea-ce953cb4dbff}*SharedItemsImports = 4
 	EndGlobalSection
@@ -69,42 +66,6 @@ Global
 		{CEB80879-55B9-4B01-9CEA-CE953CB4DBFF}.Release|x86.ActiveCfg = Release|Any CPU
 		{CEB80879-55B9-4B01-9CEA-CE953CB4DBFF}.Release|x86.Build.0 = Release|Any CPU
 		{CEB80879-55B9-4B01-9CEA-CE953CB4DBFF}.Release|x86.Deploy.0 = Release|Any CPU
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|Any CPU.Deploy.0 = Debug|iPhoneSimulator
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|ARM.ActiveCfg = Debug|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|ARM.Build.0 = Debug|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|ARM.Deploy.0 = Debug|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|iPhone.Build.0 = Debug|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|iPhone.Deploy.0 = Debug|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|iPhoneSimulator.Deploy.0 = Debug|iPhoneSimulator
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|x64.ActiveCfg = Debug|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|x64.Build.0 = Debug|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|x64.Deploy.0 = Debug|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|x86.ActiveCfg = Debug|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|x86.Build.0 = Debug|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Debug|x86.Deploy.0 = Debug|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|Any CPU.ActiveCfg = Release|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|Any CPU.Build.0 = Release|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|Any CPU.Deploy.0 = Release|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|ARM.ActiveCfg = Release|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|ARM.Build.0 = Release|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|ARM.Deploy.0 = Release|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|iPhone.ActiveCfg = Release|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|iPhone.Build.0 = Release|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|iPhone.Deploy.0 = Release|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|iPhoneSimulator.Deploy.0 = Release|iPhoneSimulator
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|x64.ActiveCfg = Release|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|x64.Build.0 = Release|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|x64.Deploy.0 = Release|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|x86.ActiveCfg = Release|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|x86.Build.0 = Release|iPhone
-		{552C92FB-FBF1-4ABF-A201-645B1D497264}.Release|x86.Deploy.0 = Release|iPhone
 		{8D2A86C2-AB70-4605-96BC-3EA3635E5B7C}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{8D2A86C2-AB70-4605-96BC-3EA3635E5B7C}.Debug|Any CPU.Build.0 = Debug|x86
 		{8D2A86C2-AB70-4605-96BC-3EA3635E5B7C}.Debug|Any CPU.Deploy.0 = Debug|x86
